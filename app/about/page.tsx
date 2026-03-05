@@ -1,13 +1,7 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { ArrowRight, Code2, Cpu, LineChart } from "lucide-react";
 
 export default function AboutPage() {
-  const technologies = [
-    "HTML","CSS", "JavaScript","TypeScript", "React", "Next.js", 
-    "Tailwind CSS", "Node.js", "PostgreSQL", "Git"
-  ];
-
   return (
     <div className="container mx-auto px-4 md:px-8 py-16 md:py-24 max-w-4xl">
       <div className="flex flex-col gap-8">
@@ -24,67 +18,28 @@ export default function AboutPage() {
 
         <hr className="border-border/40" />
 
-        {/* Story Section */}
-        <div className="grid gap-10 md:grid-cols-3">
-          <div className="md:col-span-2 space-y-6 text-lg leading-relaxed text-foreground/90">
-            
-            <div className="space-y-2">
-              <h2 className="text-2xl font-bold flex items-center gap-2 text-foreground">
-                <Cpu className="h-6 w-6 text-primary" />
-                The Journey
-              </h2>
-              <p>
-                My path into software development wasn't strictly linear. Exploring Electrical Engineering before transitioning to Multimedia Technologies and Design gave me a multidisciplinary perspective on how systems operate. It was during this transition that I discovered my true drive: high-level programming and engineering robust digital solutions.
-              </p>
-            </div>
-
-            <div className="space-y-2">
-              <h2 className="text-2xl font-bold flex items-center gap-2 text-foreground">
-                <Code2 className="h-6 w-6 text-primary" />
-                Technical Ethos
-              </h2>
-              <p>
-                I gravitate towards Full Stack development because I thrive on understanding the complete lifecycle of an application. While my core interest lies in backend architecture—structuring data and logic—I firmly believe that a strong backend is the foundation for seamless frontend experiences. I am meticulous about clean, self-explanatory code and strictly organized folder structures.
-              </p>
-            </div>
-
-            <div className="space-y-2">
-              <h2 className="text-2xl font-bold flex items-center gap-2 text-foreground">
-                <LineChart className="h-6 w-6 text-primary" />
-                The Vision
-              </h2>
-              <p>
-                Looking ahead, my long-term vision is entrepreneurial. I approach every project with a business-oriented mindset. True professionalism, rigorous organization, and a commitment to delivering exactly what the client needs are the pillars of any successful tech venture.
-              </p>
-            </div>
-            
-          </div>
-
-          {/* Tech Stack Sidebar */}
-          <div className="space-y-6">
-            <div className="rounded-xl border bg-card text-card-foreground shadow-sm p-6">
-              <h3 className="font-semibold text-lg mb-4">Core Technologies</h3>
-              <div className="flex flex-wrap gap-2">
-                {technologies.map((tech) => (
-                  <span 
-                    key={tech} 
-                    className="inline-flex items-center rounded-md bg-secondary px-2.5 py-0.5 text-sm font-semibold text-secondary-foreground transition-colors hover:bg-secondary/80"
-                  >
-                    {tech}
-                  </span>
-                ))}
-              </div>
-            </div>
-          </div>
+        {/* Content Section */}
+        <div className="text-lg leading-relaxed space-y-6 text-foreground/90">
+          <p>
+            My journey into software development wasn't strictly linear. I initially explored Electrical Engineering before transitioning to Multimedia Technologies and Design, where I am currently completing my second year. It was during this transition that I discovered what I really like: high-level programming. This multidisciplinary background gave me a unique perspective on how systems operate, driving my continuous hunger to learn, evolve, and engineer robust digital solutions.
+          </p>
+          <p>
+            I gravitate towards Full Stack development because I thrive on understanding the complete lifecycle of an application. My core interest lies in backend architecture-structuring data and logic-but I firmly believe that a strong backend provides the ultimate foundation for seamless frontend experiences. Having complete control over the entire ecosystem, from database organization to the user interface, is what makes development fascinating to me.
+          </p>
+          <p>
+            In my work, I am highly meticulous. I prioritize clean, self-explanatory code and strictly organized folder structures. I believe that good software is defined not just by whether it works, but by how quickly it can be understood and maintained. This structural discipline and perfectionism form the core of my technical ethos.
+          </p>
+          <p>
+            Looking ahead, my long-term vision is entrepreneurial. I approach every project with a business-oriented mindset, knowing that true professionalism, rigorous organization, and a commitment to delivering exactly what the client needs are the pillars of any successful tech venture.
+          </p>
+          <p>
+            Beyond my technical work, I maintain an active lifestyle and pursue hobbies that require focus and discipline. I have a natural curiosity for mechanical systems and high-performance environments, which often complements my analytical mindset. In my downtime, I value the balance found in reading and gaming, always seeking new ways to stay inspired and recharged for the next challenge.          </p>
         </div>
 
         {/* Call to Action */}
-        <div className="pt-8 flex flex-col sm:flex-row gap-4">
+        <div className="pt-8">
           <Link href="/contact">
-            <Button size="lg" className="w-full sm:w-auto">
-              Let's work together
-              <ArrowRight className="ml-2 h-4 w-4" />
-            </Button>
+            <Button size="lg">Let's work together</Button>
           </Link>
         </div>
         

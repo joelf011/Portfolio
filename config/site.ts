@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: "Joel Fernandes",
   description: "Dedicated to building clean and structured web applications.",
-  url: "https://portfolio-ashen-beta-88.vercel.app",
+  url: "http://localhost:3000",
   links: {
     github: "https://github.com/joelf011",
     linkedin: "https://linkedin.com/in/joel-fernandes011",
